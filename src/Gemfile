@@ -43,6 +43,15 @@ gem 'httparty'
 # デザインを整えます。
 gem 'bootstrap', '~> 5.1.3'
 
+# 非同期通信実装に使用する。
+gem 'jquery-rails'
+
+# より安定した開発環境を構築。
+gem 'net-http'
+
+# Rails 7を使用する場合、Webpackerはデフォルトで推奨されていないため、代わりにjsbundling-railsやimportmap-railsを使うのが一般的
+gem 'jsbundling-rails'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"

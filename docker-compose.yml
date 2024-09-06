@@ -48,3 +48,10 @@ services:
   # しかし、以下の様に記載することで、IPアドレスをわざわざ記載することなく接続できる。
   depends_on:
    - db
+
+ # webpackerの設定
+ webpacker:
+   build: .
+   command: bundle exec rails webpacker:compile
+   volumes:
+     - ./src:/app
